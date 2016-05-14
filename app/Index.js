@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 
-class App extends Component {
+class Index extends Component {
   constructor(props) {
     super(props)
   }
@@ -8,10 +8,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>App</h1>
+        <h1>Index</h1>
       </div>
     )
   }
 }
 
-export default App
+export default Index
