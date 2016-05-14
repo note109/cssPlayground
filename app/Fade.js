@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import CSS from '../style/fade.css'
 
 class Fade extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Fade extends Component {
 
   render() {
     return (
-      <div>
+      <div className={CSS.fade}>
         <h1>Fade</h1>
       </div>
     )
