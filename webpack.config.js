@@ -19,7 +19,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/, include: __dirname },
-      { test: /\.css$/, loader: 'style-loader!css-loader?localIdentName=[name]__[local]___[hash:base64:5]' }
+      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader?localIdentName=[name]__[local]___[hash:base64:5]' }
     ]
   }
 }

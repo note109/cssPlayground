@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import CSS from '../style/fade.css'
+import CSS from '../style/fade.scss'
 
 class Fade extends Component {
   constructor(props) {
