@@ -1,5 +1,16 @@
-:local .fade {
-  h1 {
-    background-color: #000;
-  }
+:local .section {
+  height: 100vh;
+  padding: 64px;
+}
+:local .section0 {
+  background-color: #efefef;
+}
+:local .section1 {
+  background-color: #9B9B9B;
+}
+:local .section2 {
+  background-color: #4A4A4A;
+}
+:local .section3 {
+  background-color: #222221;
 }
