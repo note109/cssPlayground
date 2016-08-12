@@ -3,6 +3,7 @@ import { Route, Router } from 'react-router'
 
 import Index from './app/Index'
 import Fade from './app/Fade'
+import SVG from './app/SVG'
 
 export default class Root extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class Root extends Component {
       <Router history={history}>
         <Route path="/" component={Index} />
         <Route path="fade" component={Fade} />
+        <Route path="svg" component={SVG} />
       </Router>
     )
   }
