@@ -6,24 +6,48 @@
 .check {
   stroke-dasharray: 20;
   stroke-dashoffset: 20;
-  animation: dash 0.5s ease infinite forwards;
-  // animation: check 1.0s ease infinite alternate;
+  animation: check 0.5s ease infinite forwards;
 }
 
 @keyframes check {
-  0% {
-    stroke: #fff;
-  }
-  100% {
-    stroke: #000;
-  }
-}
-
-@keyframes dash {
   0% {
     stroke-dashoffset: 20;
   }
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+.circleWrapper {
+  // animation: rotate 2.5s ease infinite forwards;
+  zoom: 2;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  stroke-dasharray: 1, 100;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: load 2.5s ease-in-out infinite;
+}
+
+@keyframes load {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
   }
 }
